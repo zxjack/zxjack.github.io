@@ -36,11 +36,7 @@ jobs:
         npm i
         # 拉取主题代码
         rm -rf themes/*
-        git clone --branch ${NEXT_VERSION} --depth=10  git@github.com:next-theme/hexo-theme-next.git themes/next
-        git checkout -b ${NEXT_VERSION}
-        git clone git@github.com:next-theme/theme-next-three --depth=1 themes/next/source/lib/three
-        # git clone git@github.com:next-theme/theme-next-fancybox3  --depth=1 themes/next/source/lib/fancybox
-        git clone git@github.com:next-theme/theme-next-pace --depth=1 themes/next/source/lib/pace
+        git clone https://github.com/next-theme/hexo-theme-next themes/next
         
   
     - name: Deploy
